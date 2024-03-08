@@ -18,3 +18,5 @@ package-lock.json
 
 # Misc
 assets/js/dist
+
+Gemfile.lock
