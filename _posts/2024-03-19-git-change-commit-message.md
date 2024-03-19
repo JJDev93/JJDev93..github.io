@@ -12,6 +12,7 @@ render_with_liquid: false
 > local에서만 commit 했을 때
 
     git commit --amend
+
 이 명령은 가장 최근의 커밋 메시지를 변경합니다. 
 이를 실행하면 텍스트 편집기가 열리고, 새로운 커밋 메시지를 입력할 수 있다.
 
