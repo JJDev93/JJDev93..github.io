@@ -1,23 +1,36 @@
 ---
-title: "[Git] 커밋 메세지 수정 방법(changing commit message)"
-date: 2024-03-19 YY:MM:SS +09:00
-categories: [형상관리, git]
-tags: [git]
+title: "[마크다운, Markdown] 코드 블록(code block)"
+date: 2024-03-19 16:21:SS +09:00
+categories: [ETC, Markdown]
+tags: [markdown, md]
 render_with_liquid: false
 ---
 
-![error](/assets/img/post/202403/git-change-commit-message-01.png)
+마크다운에서는 ```를 사용해서 코드 블록을 사용할 수 있다. <br>
+해당코드를 등록하면 다음과 같이 보인다.
 
-# PUSH하기 전인 경우
-> local에서만 commit 했을 때
+![error](/assets/img/post/202403/2024-03-19-markdown-code-block-01.png)
 
-    git commit --amend
+이 코드 블록에 어떤 언어를 사용해서 작성되었는지 알려주고 싶을 떄는
+(```)의 시작에 언어를 선언해주면 된다. 선언가능한 언어 리스트는 아래와 같다.
 
-이 명령은 가장 최근의 커밋 메시지를 변경합니다. 
-이를 실행하면 텍스트 편집기가 열리고, 새로운 커밋 메시지를 입력할 수 있다.
+|언어|Markdown|
+|------|---|
+|Bash|bash|
+|C#|cs|
+|C++|cpp|
+|CSS|css|
+|Diff|diff|
+|HTML, XML|html|
+|HTTP|http|
+|Ini|ini|
+|JSON|json|
+|Java|java|
+|JavaScript|javascript|
+|PHP|php|
+|Perl|perl|
+|Python|python|
+|Ruby|ruby|
+|SQL|sql|
 
-![error](/assets/img/post/202403/git-change-commit-message-02.png)
-
-![error](/assets/img/post/202403/git-change-commit-message-03.png)
-
-커밋내역이 변경된 것을 확인할 수 있다.
+![error](/assets/img/post/202403/2024-03-19-markdown-code-block-02.png)
