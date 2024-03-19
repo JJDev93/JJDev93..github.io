@@ -6,9 +6,9 @@ tags: [Node.js,error,npm]
 render_with_liquid: false
 ---
 
-
-    npm install mongoose --save
-
+```bash
+npm install mongoose --save
+```
 몽구스를 설치하려던 도중, 에러가 발생했다.
 
 ![error](/assets/img/post/202311/2023-11-06-node-js-error-01.png)
