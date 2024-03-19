@@ -10,7 +10,7 @@ render_with_liquid: false
 
 npx create-react-app을 통해 리액트 프로젝트 설치 중 에러 발생
 
-![error](/assets/img/post/2023-11-06-node-js-code-ECONNRESET-01.png)
+![error](/assets/img/post/202311/2023-11-06-node-js-code-ECONNRESET-01.png)
 
     Installing packages. This might take a couple of minutes. 
     Installing react, react-dom, and react-scripts with cra-template...
@@ -39,6 +39,6 @@ npm을 최신버전으로 업데이트
 # 결과
     npx create-react-app frontend2 
 
-![error](/assets/img/post/2023-11-06-node-js-code-ECONNRESET-02.png)
+![error](/assets/img/post/202311/2023-11-06-node-js-code-ECONNRESET-02.png)
 
 에러 하나 없이 정상 빌드 된다!
