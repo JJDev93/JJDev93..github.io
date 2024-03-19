@@ -1,44 +1,22 @@
 ---
-title: "[Node.js]code ECONNRESET"
-date: 2023-11-06 13:42:00 +09:00
-categories: [Node.js, error]
-tags: [Node.js,error,npm]
+title: "[Git] 커밋 메세지 수정 방법(changing commit message)"
+date: 2024-03-19 YY:MM:SS +09:00
+categories: [형상관리, git]
+tags: [git]
 render_with_liquid: false
 ---
 
-# 문제
+![error](/assets/img/post/202403/git-change-commit-message-01.png)
 
-npx create-react-app을 통해 리액트 프로젝트 설치 중 에러 발생
+# PUSH하기 전인 경우
+> local에서만 commit 했을 때
 
-![error](/assets/img/post/2023-11-06-node-js-code-ECONNRESET-01.png)
+    git commit --amend
+이 명령은 가장 최근의 커밋 메시지를 변경합니다. 
+이를 실행하면 텍스트 편집기가 열리고, 새로운 커밋 메시지를 입력할 수 있다.
 
-    Installing packages. This might take a couple of minutes. 
-    Installing react, react-dom, and react-scripts with cra-template...
-    
-    npm ERR! code ECONNRESET
-    npm ERR! syscall read
-    npm ERR! errno ECONNRESET
-    npm ERR! network Invalid response body while trying to fetch https://registry.npmjs.org/@babel%2Fpreset-env: read ECONNRESET
-    npm ERR! network This is a problem related to network connectivity.
-    npm ERR! network In most cases you are behind a proxy or have bad network settings.
-    npm ERR! network
-    npm ERR! network If you are behind a proxy, please make sure that the
-    npm ERR! network 'proxy' config is set properly.  See: 'npm help config'  
-    npm ERR! A complete log of this run can be found in: C:\Users\hncis\AppData\Local\npm-cache\_logs\2023-11-03T01_14_36_234Z-debug-0.log  Aborting installation.   
-    npm install --no-audit --save --save-exact --loglevel error react react-dom react-scripts cra-template has failed.
+![error](/assets/img/post/202403/git-change-commit-message-02.png)
 
+![error](/assets/img/post/202403/git-change-commit-message-03.png)
 
-# 원인
-이전에 nvm을 통해 node.js의 버전을 최신 버전으로 업그레이드 했는데, 그 결과 node.js는 최신인데 npm이 최신 버전이 아니어서 발생한 에러.
-
-# 해결
-npm을 최신버전으로 업데이트
-
-    npm i -g npm@latest 
-
-# 결과
-    npx create-react-app frontend2 
-
-![error](/assets/img/post/2023-11-06-node-js-code-ECONNRESET-02.png)
-
-에러 하나 없이 정상 빌드 된다!
+커밋내역이 변경된 것을 확인할 수 있다.
